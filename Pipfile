@@ -12,3 +12,6 @@ python-dotenv = "*"
 
 [requires]
 python_version = "3.9"
+
+[scripts]
+dev = "bash -c \"export FLASK_DEBUG=1 && export FLASK_ENV='development' && flask run\" "
