@@ -9,6 +9,7 @@ flask-cors = "*"
 python-dotenv = "*"
 gunicorn = "*"
 flask-wtf = "*"
+flask-login = "*"
 
 [dev-packages]
 
