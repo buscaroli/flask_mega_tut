@@ -10,6 +10,7 @@ python-dotenv = "*"
 gunicorn = "*"
 flask-wtf = "*"
 flask-login = "*"
+email-validator = "*"
 
 [dev-packages]
 
