@@ -14,6 +14,10 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
+#  only allow auth users to login by the @login_required decorato rto the 
+# appropriate routes.
+# users not logged in will be redirected to the login page 'login'
+login.login_view = 'login'
 
 # importing at the bottom as a workaround to circular imports
 # from app import routes should be here
